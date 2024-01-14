@@ -14,7 +14,7 @@ from torch.optim import Adam
 from data_loader.dataset import DataSet
 from modules.model import DevignModel
 from trainer import train
-from utils import tally_param, debug, set_logger
+from .utils import tally_param, debug, set_logger
 
 torch.backends.cudnn.enable =True
 torch.backends.cudnn.benchmark = True
