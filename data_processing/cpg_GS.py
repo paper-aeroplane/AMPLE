@@ -648,7 +648,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--csv', help='normalized csv files to process', default='../devign_dataset/devign_parsed/')  #nodes  edges
     parser.add_argument('--src', help='source c files to process', default='../devign_dataset/devign_raw_code/')
-    parser.add_argument('--json_files', help = 'train and test and valid', default=['devign_dataset/devign_data_split/train_raw_code.json', 'devign_dataset/devign_data_split/test_raw_code.json', 'devign_dataset/devign_data_split/valid_raw_code.json'])
+    parser.add_argument('--json_files', help = 'train and test and valid', default=['devign_dataset/devign_data_split/train_raw_code.json', 'devign_dataset/devign_data_split/test_raw_code.json', 'devign_dataset/devign_data_split/valid_raw_code.json'], nargs="+")
     parser.add_argument('--wv', default='devign_dataset/devign_wv_models/devign_train_subtoken_data')  # word2vec
     parser.add_argument('--output_dir', default='devign_dataset/devign_cpg_c2_2')
     args = parser.parse_args()
