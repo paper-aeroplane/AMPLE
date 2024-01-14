@@ -7,7 +7,7 @@ import torch
 from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
 from tqdm import tqdm
 
-from utils import debug
+from .utils import debug
 from modules.model import DevignModel
 
 def evaluate_loss(model, loss_function, num_batches, data_iter, cuda=False):
