@@ -9,7 +9,7 @@ from dgl import DGLGraph
 from tqdm import tqdm
 
 from data_loader.batch_graph import GGNNBatchGraph
-from utils import load_default_identifiers, initialize_batch, debug
+from .utils import load_default_identifiers, initialize_batch, debug
 
 ##for each function
 class DataEntry:
